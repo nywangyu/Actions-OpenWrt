@@ -18,8 +18,5 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git dahuilang https://github.com/shidahuilang/openwrt-package;Immortalwrt' >> feeds.conf.default
 #git clone https://github.com/messense/aliyundrive-webdav package/messense
-git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
-git clone --depth 1 https://github.com/kenzok8/openwrt-packages
-mv -f openwrt-packages/luci-app-quickstart ./luci-app-quickstart
-rm -rf openwrt-packages
+#git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
+#git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
