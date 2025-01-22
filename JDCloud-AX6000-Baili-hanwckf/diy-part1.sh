@@ -20,5 +20,5 @@
 #git clone https://github.com/messense/aliyundrive-webdav package/messense
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
-git clone -b Immortalwrt https://github.com/shidahuilang/openwrt-package/tree/Immortalwrt/luci-app-quickstart package/luci-app-quickstart
-git clone -b Immortalwrt https://github.com/shidahuilang/openwrt-package/tree/Immortalwrt/luci-app-istorex package/luci-app-istorex
+git clone -b Immortalwrt https://github.com/shidahuilang/openwrt-package/luci-app-quickstart package/luci-app-quickstart
+git clone -b Immortalwrt https://github.com/shidahuilang/openwrt-package/luci-app-istorex package/luci-app-istorex
