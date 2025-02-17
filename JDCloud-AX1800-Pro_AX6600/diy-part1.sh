@@ -16,8 +16,8 @@
 #sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # Add a feed source
-git clone https://github.com/kenzok8/openwrt-packages package/kenzo
-git clone https://github.com/kenzok8/small package/small
+#git clone https://github.com/kenzok8/openwrt-packages package/kenzo
+#git clone https://github.com/kenzok8/small package/small
 rm -rf package/lean/luci-theme-argon
 #git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
