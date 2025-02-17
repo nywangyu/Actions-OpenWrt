@@ -20,6 +20,5 @@
 #git clone https://github.com/kenzok8/small package/small
 rm -rf package/lean/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 echo 'src-git dahuilang https://github.com/shidahuilang/openwrt-package;Lede' >> feeds.conf.default
