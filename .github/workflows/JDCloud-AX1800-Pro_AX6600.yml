@@ -101,7 +101,7 @@ jobs:
     - name: 更新 & 安装 feeds
       run: |
         cd openwrt
-        ./scripts/feeds update -a && rm -rf feeds/smpackage/{luci-app-fchomo,iptables-mod-fullconenat,luci-app-dogcom,base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+        ./scripts/feeds update -a && rm -rf feeds/smpackage/{luci-app-fchomo,luci-app-dogcom,base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
         ./scripts/feeds install -a
 
     - name: 加载config & DIY_P2_SH
