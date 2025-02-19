@@ -55,9 +55,6 @@ jobs:
     steps:
     - name: 检查项目分支
       uses: actions/checkout@main
-    
-    - name: Build project
-      run: ./build.sh
 
     - name: Cleanup temporary files
       run: |
