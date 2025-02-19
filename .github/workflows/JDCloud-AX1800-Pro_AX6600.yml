@@ -56,16 +56,6 @@ jobs:
     - name: 检查项目分支
       uses: actions/checkout@main
 
-    - name: Cleanup temporary files
-      run: |
-        rm -rf node_modules
-        rm -rf **/bin **/obj
-
-    - name: Cleanup logs
-      run: |
-        sudo rm -rf /home/runner/runners/_diag/*.log
-      if: always()
-
     - name: 初始化编译环境
       env:
         DEBIAN_FRONTEND: noninteractive
