@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 ###############手动修改##############
-name: JDCloud-AX1800-Pro_AX6600-lede
+name: JDCloud-AX6000-Baili-lede
 
 on:
   repository_dispatch:
@@ -158,14 +158,10 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: | 
-        mapfile -t devices < <(grep '^CONFIG_TARGET_DEVICE.*=y' openwrt/.config | sed -r 's/.*DEVICE_(.*)=y/\1/')
         cd openwrt/bin/targets/*/*
         rm -rf packages
         sudo -E apt-get -qq install rename
-                for val in "${devices[@]}"; do
-          rename "s/.*${val}/${{ env.FILE_DATE }}-${{ env.OPENWRT_NAME }}-${val}${{ env.BUILD_DOCKERMAN }}/" *
-          echo "$val"
-        done
+        rename 's/.*${{ env.DEVICE_NAME }}/${{ env.FILE_DATE }}-${{ env.OPENWRT_NAME }}-${{ env.DEVICE_NAME }}${{ env.WIFI_VERSION }}${{ env.SWITCH }}${{ env.BUILD_DOCKERMAN }}/' *
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
