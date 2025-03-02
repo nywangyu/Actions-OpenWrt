@@ -21,6 +21,7 @@
 #git clone https://github.com/kenzok8/small package/small
 rm -rf feeds/luci/themes/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 #git clone -b master https://github.com/shidahuilang/openwrt-package package/luci-app-openclash
 #git clone -b helloworld https://github.com/shidahuilang/openwrt-package package/luci-app-helloworld
