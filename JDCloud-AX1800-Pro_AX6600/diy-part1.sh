@@ -24,5 +24,5 @@
 #git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 #git clone -b master https://github.com/shidahuilang/openwrt-package package/luci-app-openclash
-#git clone -b helloworld https://github.com/shidahuilang/openwrt-package package/luci-app-helloworld
+git clone -b Theme2 https://github.com/shidahuilang/openwrt-package package/Theme2
 echo 'src-git dahuilang https://github.com/shidahuilang/openwrt-package;Lede' >> feeds.conf.default
