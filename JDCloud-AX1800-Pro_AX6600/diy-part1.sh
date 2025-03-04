@@ -22,7 +22,7 @@
 #rm -rf feeds/luci/themes/luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 #git clone -b main https://github.com/ilxp/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
-#git clone https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
-#git clone -b master https://github.com/shidahuilang/openwrt-package package/luci-app-openclash
-git clone -b Theme2 https://github.com/shidahuilang/openwrt-package package/Theme2
+git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+git clone https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
+git clone https://github.com/gngpp/luci-app-design-config.git package/luci-app-design-config
 echo 'src-git dahuilang https://github.com/shidahuilang/openwrt-package;Lede' >> feeds.conf.default
