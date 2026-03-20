@@ -14,51 +14,10 @@ on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
-      REPO_BRANCH:
-        description: 'Select Source Branch'
-        required: true
-        default: 'v7672'
-        type: choice
-        options:
-        - v7672
-        - v7661
       LAN_IP:
         description: 'Set LAN IP Address'
         required: true
-        default: '192.168.1.1'
-      WIFI_DRIVER:
-        description: 'Choose WiFi Driver'
-        required: true
-        default: 'v7.6.7.2-fw-20240823(recommend)'
-        type: choice
-        options:
-        - v7.6.7.2-fw-20240823(recommend)
-        - v7.6.6.1-fw-20230808(recommend)
-        - v7.6.7.2-fw-default
-        - v7.6.7.2-fw-20221208
-        - v7.6.7.2-fw-20230306
-        - v7.6.7.2-fw-20230421
-        - v7.6.7.2-fw-20230808
-        - v7.6.7.2-fw-20231024
-        - v7.6.6.1-fw-default
-        - v7.6.6.1-fw-20221208
-        - v7.6.6.1-fw-20230306
-        - v7.6.6.1-fw-20230421
-        - v7.6.6.1-fw-20231024
-        - v7.6.6.1-fw-20240823
-      SW_DRIVER:
-        description: 'Choose Switch Driver'
-        required: true
-        default: 'GSW'
-        type: choice
-        options:
-        - GSW
-        - DSA
-      APP_MTK:
-        description: 'Use luci-app-mtk wifi config'
-        required: true
-        default: false
-        type: boolean
+        default: '192.168.100.1'
       NO_DOCKERMAN:
         description: 'Not build luci-app-dockerman'
         required: true
@@ -74,10 +33,10 @@ on:
 env:
   ###############手动修改##############
   ##手动设置上传时候的打包名称和tag名称UPLOAD_TAG_NAME
-  OPENWRT_NAME: hanwckf
+  OPENWRT_NAME: padavanonly
   UPLOAD_TAG_NAME: jdcloud_re-cp-03
-  REPO_URL: https://github.com/lgs2007m/immortalwrt-mt798x
-  REPO_BRANCH: ${{ github.event.inputs.REPO_BRANCH || 'v7672' }}
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
+  REPO_BRANCH: openwrt-24.10-6.6
   FEEDS_CONF: JDCloud-AX6000-Baili-hanwckf/feeds.conf.default
   CONFIG_FILE: JDCloud-AX6000-Baili-hanwckf/.mtwifi-cfg.config
   DIY_P1_SH: JDCloud-AX6000-Baili-hanwckf/diy-part1.sh
